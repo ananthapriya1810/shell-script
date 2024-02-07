@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ID=$(id -U)
+ID=$(id -u)
 
 if [ $ID ne 0 ]
 
@@ -22,5 +22,19 @@ echo "installation is failed"
 else
 
 echo "installation is success"
+
+fi
+
+yum install git -y 
+
+if [ $? -ne 0 ]
+
+then
+
+echo "installation GIT is failed"
+
+else
+
+echo "installation GIT is success"
 
 fi

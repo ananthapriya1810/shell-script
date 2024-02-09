@@ -6,7 +6,7 @@ TIMESTAMP=(DATE +%F-%H-%M-%S)
 logfile="/tmp/$0-$TIMESTAMP.LOG"
 
 VALIDATE(){
-    if [ $1 -ne 0]
+    if [ $1 -ne 0 ]
     then
     echo "print $2 ...SUCCESS"
     else 
